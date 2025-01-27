@@ -48,5 +48,5 @@ Route::post('/tickets/{id}/transfer', [TicketController::class, 'transfer']);
 
 
 
-Route::middleware('auth:api')->get('user', [AuthController::class, 'user']);
+Route::middleware('auth:api')->get('/auth/user', [AuthController::class, 'user']);
 
